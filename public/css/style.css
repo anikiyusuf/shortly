@@ -235,6 +235,9 @@ section{
     padding-right: 2rem;
     margin-top: 1rem;
 }
+.container--svg{
+    
+}
 @media (max-width:1200px){
   
     ul {
@@ -393,7 +396,6 @@ input::after{
 @media (max-width:600px){
     .header--item{
         display: flex;
-        justify-content: space-between;
         background-color:hsl(0, 0%, 100%) ;
         width: 100%;
     }
@@ -401,7 +403,7 @@ input::after{
         margin-left: -3rem;
     }
   .icon{
-    margin-right: -7rem;
+    margin-right: -10rem;
   }
    
     
@@ -448,7 +450,7 @@ section{
     .about--section{
         display: flex;
         flex-direction: column;
-    
+         gap:2rem
      
     }
     .section--one , .section--two , .section--three , .section--four , .section--five{
