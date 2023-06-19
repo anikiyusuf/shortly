@@ -393,9 +393,16 @@ input::after{
 @media (max-width:600px){
     .header--item{
         display: flex;
-        
-       
+        justify-content: space-between;
+        background-color:hsl(0, 0%, 100%) ;
+        width: 100%;
     }
+    .logo{
+        margin-left: -3rem;
+    }
+  .icon{
+    margin-right: -7rem;
+  }
    
     
 section{
@@ -436,6 +443,27 @@ section{
     .Signinbox--enter {
         margin:150px auto; 
         width:80%;     
+    }
+
+    .about--section{
+        display: flex;
+        flex-direction: column;
+    
+     
+    }
+    .section--one , .section--two , .section--three , .section--four , .section--five{
+        background: white;
+        padding:2rem;
+        height:10%;
+        color: black;
+        box-shadow: -2px 4px 10px 6px rgba(0,0,0,0.10);
+    }
+    
+    .section--one  p, .section--two  p, .section--three p , .section--four  p, .section--five p{
+        color:hsl(184, 60%, 76%);
+        padding-left:2rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
     }
 }
 
