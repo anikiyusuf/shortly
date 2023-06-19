@@ -1,0 +1,44 @@
+require('dotenv').config()
+const express = require("express")
+// const userRouter = require('./routes/userRouter')
+// const router = require('./routes/urlRoutes');
+const { connectionMongoDB  } = require("./db")
+const app = express()
+const PORT = process.env.PORT
+
+
+
+connectionMongoDB()
+
+
+app.set('view engine', 'ejs')
+app.set('view engine')
+// app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.urlencoded({ extended: false }))
+app.use(express.static('public'))
+
+app.use("/" , require("./routes/index"))
+app.use("/auth" ,require("./routes/userRouter"))
+app.use("/" , require("./routes/urlRoutes"))
+
+
+// app.get('/' , (req,res) => {
+//     res.render("index")
+// })
+
+// app.get("/url" , (req,res)=>{
+//     res.render('url')
+// })
+
+// app.get("/create" , (req,res) => {
+//     res.render('create')
+// })
+// app.get("/enter" , (req,res) => {
+//     res.render('enter')
+// })
+
+app.listen(PORT , () => {
+    console.log(`server running localhost:${PORT}`)
+})
