@@ -31,26 +31,35 @@ body{
     
 }
 .btn {
-   margin-top: -.5rem;
+     display: flex;
+     margin-top: -.3rem;
    
 }
 
- .sign{
-    background-color: hsl(184, 60%, 76%);;
+.sign{
+    border: none;
+    background-color:hsl(184, 60%, 76%);
     padding:.5rem;
-    color: white;
+    color:white;
     border-radius: .7rem;
     margin-left: 1rem;
+    border: none;
+    cursor: pointer;
 }
 .sign:hover{
-    color: hsl(184, 60%, 76%);;
+    color: hsl(184, 60%, 76%);
    background-color: white;
 }
-.login{
-    padding:.6rem;
-    color: hsl(184, 60%, 76%);;
+
+    
+   .login{
+    background-color:white;
+    padding:.7rem;
+    color:hsl(184, 60%, 76%);
     border-radius: .7rem;
     margin-left: 1rem;
+    border: none;
+    cursor: pointer;
 }
 .login:hover{
     background-color:hsl(184, 60%, 76%);;
@@ -157,27 +166,25 @@ p a:hover{
 section{
     display: flex;
     margin-top: .4rem;
-    padding-right:2rem;
-    margin-right: 4rem;
-  
     font-size: 1em;   
 }
+
 .section--text{
     padding:2rem;
-    margin-top: 8rem;
+    margin-top:7rem;
     line-height: 1.5;
    
     
 }
 .section--text h1{
-    padding-left: 10rem;
-    padding-right: 15rem;
+    padding-left: 7rem;
+    padding-right:7rem;
     text-align: left;
     color:hsl(257, 13%, 22%);
 }
 .section--text p{
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 7rem;
+    padding-right: 6rem;
     text-align: left; 
     color:hsl(240, 1%, 63%);
 }
@@ -187,7 +194,7 @@ section{
     color:white;
     padding:.7rem;
     border-radius: 2rem;
-    margin-left: 10rem;
+    margin-left: 7rem;
     cursor: pointer;
 }
 
@@ -384,16 +391,37 @@ input::after{
 }
 
 @media (max-width:600px){
+    .header--item{
+        display: flex;
+        
+       
+    }
+   
+    
 section{
     display: flex;
     flex-direction: column-reverse;
+    padding: 2.4rem;
   
 }
- svg{
-    width: 100%;
-    margin-left: 2rem;
-  
+
+.sign{
+    padding:.7rem;
+    border-radius: .7rem;
+    cursor: pointer;
 }
+
+    
+   .login{
+    padding:1rem;
+    border-radius: .7rem;
+    cursor: pointer;
+}
+ .section--svg svg{
+   display: block;
+   width: 90%;
+}
+
 .section--text{
     text-align: center;
 }
@@ -407,7 +435,7 @@ section{
     .Signinbox , 
     .Signinbox--enter {
         margin:150px auto; 
-           width:80%;     
+        width:80%;     
     }
 }
 
