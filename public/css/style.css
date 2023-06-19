@@ -235,9 +235,7 @@ section{
     padding-right: 2rem;
     margin-top: 1rem;
 }
-.container--svg{
-    
-}
+
 @media (max-width:1200px){
   
     ul {
@@ -403,7 +401,7 @@ input::after{
         margin-left: -3rem;
     }
   .icon{
-    margin-right: -10rem;
+    margin-right: -13rem;
   }
    
     
