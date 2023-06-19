@@ -198,6 +198,17 @@ section{
     cursor: pointer;
 }
 
+.logout{
+    background-color: hsl(184, 60%, 76%);
+    border: none;
+    color:white;
+    padding:.7rem;
+    border-radius: 2rem;
+    margin-left: 7rem;
+    cursor: pointer;
+}
+
+
 .attribution{
     color:hsl(257, 13%, 22%);
 }
@@ -401,7 +412,7 @@ input::after{
         margin-left: -3rem;
     }
   .icon{
-    margin-right: -13rem;
+    margin-right: -15rem;
   }
    
     
@@ -438,6 +449,13 @@ section{
 .section--text p {
     text-align: center;
 }
+.itemslist{
+    display: none;
+    position:absolute;
+    background-color:white;
+    margin-left: -12rem;
+   
+   }
 
     .Signinbox , 
     .Signinbox--enter {
@@ -465,6 +483,14 @@ section{
         padding-right: 2rem;
         margin-top: 1rem;
     }
+    .logout{
+        margin-left: -9rem;
+        cursor: pointer;
+    }
+    .header--item{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width:440px){
