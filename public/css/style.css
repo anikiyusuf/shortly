@@ -385,7 +385,7 @@ input::after{
 
 
     .header--item__url{
-        width: 75rem;
+        width: 76rem;
     }
     
 
@@ -511,7 +511,7 @@ section{
         cursor: pointer;
     }
     .header--item__url{
-       width:70rem;
+       width:71rem;
     }
     
 }
@@ -524,7 +524,7 @@ section{
 
 }
 .header--item__url{
-   width:68rem;
+   width:69rem;
 }
 .logout{
     margin-right:-4rem ;
