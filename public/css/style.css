@@ -383,6 +383,12 @@ input::after{
         margin-top: 1rem;
     }
 
+
+    .header--item__url{
+        width: 75rem;
+    }
+    
+
 }
 
 @media (max-width:768px){
@@ -505,7 +511,7 @@ section{
         cursor: pointer;
     }
     .header--item__url{
-       width:38rem;
+       width:70rem;
     }
     
 }
@@ -518,7 +524,7 @@ section{
 
 }
 .header--item__url{
-   width:36rem;
+   width:68rem;
 }
 .logout{
     margin-right:-4rem ;
