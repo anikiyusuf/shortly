@@ -39,8 +39,8 @@
             <tr>
               <th>Full URL</th>
               <th>Short URL</th>
-              <th>Clicks</th> 
               <th>QR Codes</th> 
+              <th>Clicks</th> 
             </tr>
           </thead>
           <tbody>
@@ -48,14 +48,13 @@
               <tr>
                 <td><a href="<%= shortUrl.full %>" target="_blank"><%= shortUrl.full %></a></td>
                 <td><a href="<%= shortUrl.short %>" target="_blank"><%= shortUrl.short %>.ik</a></td>
-                <td><%= shortUrl.clicks %></td>
                 <td>
                   <a href="/qrcodes/<%= shortUrl.short %>.png" target="_blank" download>
                     <img src="qr-code.png"  alt="QR Code" style="width: 100px; height: 100px;"> 
                     <!-- <img src="/qrcodes/<%= shortUrl.short %>.png" alt="QR Code" style="width: 100px; height: 100px;"> -->
                   </a>
                 </td>
-          
+                <td><%= shortUrl.clicks %></td>
               </tr>
             <% }) %>
           </tbody>
