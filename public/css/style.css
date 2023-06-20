@@ -484,11 +484,11 @@ section{
         margin-top: 1rem;
     }
     .logout{
-        margin-left: -9rem;
+       margin-right: -4rem;
         cursor: pointer;
     }
     .header--item{
-        width: 100%;
+       width:38rem;
     }
     
 }
@@ -499,6 +499,12 @@ section{
     font-size: 13px;
 
 
+}
+.header--item{
+   width:36rem;
+}
+.logout{
+    margin-right:-4rem ;
 }
 
 .section--text h1{
