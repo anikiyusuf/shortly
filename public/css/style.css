@@ -419,19 +419,20 @@ input::after{
         display: flex;
         background-color:hsl(0, 0%, 100%) ;
         width: 100%;
+        
     }
     .logo{
         margin-left: -3rem;
     }
-  .icon{
+   .icon{
     margin-right: -14rem;
-  }
+   }
    
     
 section{
     display: flex;
     flex-direction: column-reverse;
-    padding: 2.4rem;
+    padding: 2.2rem;
   
 }
 
@@ -441,11 +442,13 @@ section{
     cursor: pointer;
 }
 
-    
+   
    .login{
     padding:1rem;
     border-radius: .7rem;
     cursor: pointer;
+    word-wrap: nowrap;
+
 }
  .section--svg svg{
    display: block;
@@ -478,7 +481,8 @@ section{
     .about--section{
         display: flex;
         flex-direction: column;
-         gap:2rem
+    
+        margin: 2rem;
      
     }
     .section--one , .section--two , .section--three , .section--four , .section--five{
