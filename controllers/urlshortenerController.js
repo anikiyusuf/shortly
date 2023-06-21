@@ -1,5 +1,6 @@
 const ShortUrl = require("../model/urlShorter")
 const QRCode = require("qrcode-generator");
+// const userModel = require("../model/userModel")
 const fs = require("fs");
 
 
@@ -23,6 +24,8 @@ async function createShortUrl(req,res){
   // res.redirect('/')
 }
 
+// QR CODE
+
 
 async function redirectToFullUrl(req, res) {
     const shortUrl = await ShortUrl.findOne({ short: req.params.shortUrl });
@@ -34,6 +37,14 @@ async function redirectToFullUrl(req, res) {
     res.redirect(shortUrl.full);
     
   }
+
+  // const generateQR = async text => {
+  //   try{
+  //     console.log(await QRCodes.toDataURL(text))
+  //   }catch(err){
+  //     console.error(err)
+  //   }
+  // }
 
   async function generateQRCode(req, res){
             try{
@@ -71,4 +82,6 @@ module.exports = {
      createShortUrl,
      redirectToFullUrl,
      generateQRCode
+    // generateQR
+    // generateQR
     }
