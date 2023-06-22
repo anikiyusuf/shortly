@@ -1,6 +1,17 @@
 Shortl is an application for shorten long url and it comes with a customise url and a qr code image which can be downloaded. 
 
-node index - for starting 
+This application was developed using express a nodejs frameworks for the backend  development, mongodb for storing data, and ejs for the views. 
+
+This project follows the MVC Pattern rules; where i created the model folder, controller folder , routes folder and the views folder.
+
+Some development packages were install such as express , nodemon , jsonwebtoken , joi , morgan just to mention a few. 
+
+This application shows every url that was created and the numbers of click. 
+
+To start the application.
+npm install 
+npm install nodemon -D 
+nodemon
 
 
 
@@ -20,22 +31,4 @@ node index - for starting
 
 
 
-Cloning  your repo or cloning a repo you want to contribute too.
 
-Step One 
-git clone <HTTPS OF THE CODE >
-
-step Two 
-cd <REPO NAME>
-
-Step Three 
-git remote -v 
-
-Step Four 
-git remote add upstream <HTTPS OF THE CODE >
-
-Step Five 
-git remote -v
-
-step Six 
-code .
