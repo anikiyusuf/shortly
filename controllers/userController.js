@@ -9,7 +9,7 @@ const JWT_TOKEN = process.env.JWT_TOKEN
 
 // this function is used to create token 
 const createToken = (id) => {
-    return jwt.sign({ id} , JWT_TOKEN , {
+    return jwt.sign({id} , JWT_TOKEN , {
         expiresIn : '1h',
     })
 } 

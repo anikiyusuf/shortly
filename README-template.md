@@ -17,7 +17,7 @@ git remote -v
 
 step Six 
 code .
-
+<!-- 
 
 Push 
 go to your cloned repo folder 
@@ -27,4 +27,13 @@ git init
 git add .
 git commit -m "your commit message"
 git remote add origin 
-git
+git push origin master -->
+
+git init 
+git branch master
+git checkout master
+git push origin master
+git add .
+git commit -m "Your commit message"
+git remote -v
+git push -f origin master
