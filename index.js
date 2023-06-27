@@ -1,8 +1,8 @@
 require('dotenv').config()
 const express = require("express")
 const  rateLimit = require('express-rate-limit')
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerSpec = require('./swagger')
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swagger')
 const { connectionMongoDB  } = require("./db")
 
 const app = express()
@@ -23,7 +23,7 @@ app.use(express.static('public'))
 app.use("/" , require("./routes/index"))
 app.use("/auth" ,require("./routes/userRouter"))
 app.use("/" , require("./routes/urlRoutes"))
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 app.get('/', (req, res) => {
