@@ -85,7 +85,7 @@ router.get('/url', getShortUrls);
  *                         description: The number of clicks.
  *                         example: 0
  */
-//  router.post('/shortUrls', validateRequest, createShortUrl);
+ router.post('/shortUrls', validateRequest, createShortUrl);
 
 /**
  * @swagger
