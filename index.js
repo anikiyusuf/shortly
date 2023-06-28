@@ -26,9 +26,7 @@ app.use("/" , require("./routes/urlRoutes"))
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
-app.get('/', (req, res) => {
-    res.send('Welcome to the API!');
-  });
+
   
 // RATE liMITING FOR 30 minutes
 const limiter = rateLimit({
@@ -49,5 +47,5 @@ app.use((err, req,res,  next) =>{
 })
 
 app.listen(PORT , () => {
-    console.log(`server running localhost:${PORT}`)
+console.log(`server running ${PORT} `)
 })
